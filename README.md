@@ -60,6 +60,12 @@ scripts/
   generate-mates.ts   builds the mate puzzle bank
 ```
 
+## Deployment
+
+Every push to `main` is built and published to GitHub Pages by `.github/workflows/deploy.yml`, at `https://<owner>.github.io/<repo>/`. One-time setup: in the repository's **Settings → Pages**, set **Source** to **GitHub Actions**. You can also run the workflow by hand from the Actions tab.
+
+To use a custom domain later, add it under Settings → Pages and set `BASE_PATH: /` in the workflow.
+
 ## Roadmap
 
 1. **Native app stores:** wrap the PWA with Capacitor for App Store and Google Play builds.
